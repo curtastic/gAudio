@@ -4,6 +4,7 @@ gAudio.js
 Demo: https://curtastic.com/gAudio/test.html
 
 Features:
+- Play the same sound multiple times overlapping eachother.
 - Stereo panning (spatial audio). Change pan while it's playing.
 - Global volume and individual sound volume, you can change while it's playing.
 - Unlocks audio for you on the first user interaction, when the browser starts with audio locked.
