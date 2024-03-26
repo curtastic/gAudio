@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>gAudio.js Test</title>
+	</head>
+	<body>
+		<script src='gAudio.js'></script>
+		<script>
+			var mouseX = 0
+			var gong = gAudio.load("gong.mp3")
+			
+			document.onclick = () => {
+				var pan = mouseX / window.innerWidth
+				gAudio.play(gong, pan)
+			}
+			
+			document.onmousemove = (e) => {
+				mouseX = e.clientX
+			}
+		</script>
+		Click to play gong, with left/right pan.
+	</body>
+</html>
